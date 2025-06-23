@@ -287,11 +287,11 @@ export class OpenaiService {
     const privateKey = readFileSync(process.env.EC2_PRIVATE_KEY_PATH!, 'utf8');
     const envs = {
       DATABASE_URI:
-        'postgresql://neondb_read_only:npg_Bq6Ncz2UPWXL@ep-black-fog-a5nhv8so.us-east-2.aws.neon.tech/neondb?sslmode=require',
+        'postgresql://neondb_read_only:xxx@ep-black-fog-a5nhv8so.us-east-2.aws.neon.tech/neondb?sslmode=require',
       PG_HOST: 'ep-black-fog-a5nhv8so.us-east-2.aws.neon.tech',
       PG_PORT: 5432,
       PG_USER: 'neondb_read_only',
-      PG_PASSWORD: 'npg_Bq6Ncz2UPWXL',
+      PG_PASSWORD: 'xxx',
       PG_DATABASE: 'neondb',
       HOST: '0.0.0.0.',
       PORT: 8000,
